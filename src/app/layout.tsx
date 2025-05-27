@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tirsdagsquizen - Multi-Location Quiz Platform",
-  description: "Simultaneous quiz competition across multiple venues in Norway. Register your team, submit scores, and compete in real-time. Powered by Quizlo.",
-  keywords: ["quiz", "trivia", "competition", "Norway", "venues", "real-time", "tirsdagsquizen", "quizlo"],
+  title: "Tirsdagsquizen - Gjør tirsdagen bedre",
+  description: "Gjør tirsdagen bedre med simultane quiz-konkurranser på tvers av Norge. Registrer laget ditt og konkurrér i sanntid.",
+  keywords: ["quiz", "trivia", "tirsdagsquiz", "Norge", "utesteder", "sanntid", "tirsdagsquizen", "quizlo", "gjør tirsdagen bedre", "quiz-konkurranse", "pub quiz"],
   authors: [{ name: "Quizlo" }],
   creator: "Quizlo",
   publisher: "Quizlo",
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     locale: "nb_NO",
     url: "https://tirsdagsquizen.no",
     siteName: "Tirsdagsquizen",
-    title: "Tirsdagsquizen - Multi-Location Quiz Platform",
-    description: "Simultaneous quiz competition across multiple venues in Norway. Register your team and compete in real-time!",
+    title: "Tirsdagsquizen - Gjør tirsdagen bedre",
+    description: "Gjør tirsdagen bedre med simultane quiz-konkurranser på tvers av Norge. Registrer laget ditt og konkurrér i sanntid!",
     images: [
       {
         url: "/og-image.svg",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   // Twitter Card metadata
   twitter: {
     card: "summary_large_image",
-    title: "Tirsdagsquizen - Multi-Location Quiz Platform",
-    description: "Simultaneous quiz competition across multiple venues in Norway. Register your team and compete in real-time!",
+    title: "Tirsdagsquizen - Gjør tirsdagen bedre",
+    description: "Gjør tirsdagen bedre med simultane quiz-konkurranser på tvers av Norge. Registrer laget ditt og konkurrér i sanntid!",
     images: ["/og-image.svg"],
     creator: "@quizlo"
   },
@@ -85,7 +85,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebApplication",
               "name": "Tirsdagsquizen",
-              "description": "Multi-location quiz competition platform for venues across Norway",
+              "description": "Gjør tirsdagen bedre med quiz-konkurranser på tvers av Norge",
               "url": "https://tirsdagsquizen.no",
               "applicationCategory": "Entertainment",
               "operatingSystem": "Web Browser",

@@ -1,7 +1,7 @@
 {
   "name": "Tirsdagsquizen",
   "short_name": "Tirsdagsquizen",
-  "description": "Multi-location quiz competition platform for venues across Norway",
+  "description": "Gjør tirsdagen bedre med quiz-konkurranser på tvers av Norge",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#4A90E2",
