@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tuesday Quiz Platform
 
-## Getting Started
+## Deployment Guide
 
-First, run the development server:
+### Environment Variables
+Set these in your production environment:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+ADMIN_PASSWORD=your_strong_admin_password
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Database Setup
+1. Run the SQL files in this order in your Supabase SQL Editor:
+   - `venue-branding-update.sql` - Adds branding columns
+   - `quiz-archive-system.sql` - Adds archive functionality
+   - `add-quiz-numbers-and-delete.sql` - Adds quiz numbering
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Initial Data
+Make sure you have venues in your database. Example:
+```sql
+INSERT INTO venues (name, region) VALUES 
+('Bocca', 'Oslo'),
+('Café Sara', 'Oslo'),
+('Grünerløkka Brygghus', 'Oslo');
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Admin Access
+- Go to `/admin/login`
+- Use the password set in `ADMIN_PASSWORD`
+- Manage venue branding and quiz archives
 
-## Learn More
+### Weekly Usage
+1. Tuesday after quiz: Go to `/admin/archive`
+2. Archive current quiz and start new week
+3. Set up venue branding as needed
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development
+```bash
+npm install
+npm run dev
+```
