@@ -78,6 +78,19 @@ export default function AdminBranding() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
+      {/* Quizlo logo bottom left - clickable */}
+      <div className="fixed bottom-8 left-8 z-10">
+        <a 
+          href="https://quizlo.no" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-gray-700 text-3xl font-light hover:text-gray-500 hover:scale-105 transition-all duration-200 cursor-pointer inline-block"
+          style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}
+        >
+          Quizlo
+        </a>
+      </div>
+
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold text-black">Admin Dashboard</h1>

@@ -76,11 +76,16 @@ export default function Home() {
       `}</style>
 
       <div className="max-w-4xl mx-auto">
-        {/* Quizlo logo bottom left */}
+        {/* Quizlo logo bottom left - clickable */}
         <div className="absolute bottom-8 left-8">
-          <div className="text-white text-3xl font-arial font-light">
+          <a 
+            href="https://quizlo.no" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white text-3xl font-arial font-light hover:text-white/80 hover:scale-105 transition-all duration-200 cursor-pointer inline-block"
+          >
             Quizlo
-          </div>
+          </a>
         </div>
 
         {/* Main content centered */}

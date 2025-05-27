@@ -267,6 +267,18 @@ export default function Quiz() {
       `}</style>
 
       <div className="max-w-4xl mx-auto">
+        {/* Quizlo logo bottom left - clickable */}
+        <div className="fixed bottom-8 left-8 z-10">
+          <a 
+            href="https://quizlo.no" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white text-3xl font-arial font-light hover:text-white/80 hover:scale-105 transition-all duration-200 cursor-pointer inline-block"
+          >
+            Quizlo
+          </a>
+        </div>
+
         {/* Header with logo and title */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-between mb-8">

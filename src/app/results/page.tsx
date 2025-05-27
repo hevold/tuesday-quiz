@@ -235,6 +235,18 @@ export default function Results() {
 
   return (
     <div className="min-h-screen text-white" style={{ backgroundColor: '#00A2FF' }}>
+      {/* Quizlo logo bottom left - clickable */}
+      <div className="fixed bottom-8 left-8 z-10">
+        <a 
+          href="https://quizlo.no" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-white text-3xl font-light hover:text-white/80 hover:scale-105 transition-all duration-200 cursor-pointer inline-block font-arial"
+        >
+          Quizlo
+        </a>
+      </div>
+
       <style jsx>{`
         .font-arial {
           font-family: Arial, Helvetica, sans-serif;
