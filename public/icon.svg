@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue background matching the image -->
+  <rect width="512" height="512" fill="#4A90E2"/>
+  
+  <!-- Q-shaped icon -->
+  <g transform="translate(256, 256)">
+    <!-- Top rounded part -->
+    <path d="M0 -180 C66.27 -180 120 -126.27 120 -60 L120 60 C120 126.27 66.27 180 0 180 C-66.27 180 -120 126.27 -120 60 L-120 -60 C-120 -126.27 -66.27 -180 0 -180 Z" fill="white"/>
+    
+    <!-- Inner cutout -->
+    <path d="M0 -120 C35.35 -120 64 -91.35 64 -60 L64 60 C64 91.35 35.35 120 0 120 C-35.35 120 -64 91.35 -64 60 L-64 -60 C-64 -91.35 -35.35 -120 0 -120 Z" fill="#4A90E2"/>
+    
+    <!-- Vertical line extending down -->
+    <rect x="-16" y="100" width="32" height="120" fill="white"/>
+    
+    <!-- Arrow point -->
+    <path d="M0 240 L-24 216 L-8 216 L-8 220 L8 220 L8 216 L24 216 Z" fill="white"/>
+  </g>
+</svg>

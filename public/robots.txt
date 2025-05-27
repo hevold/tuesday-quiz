@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /quiz/*
+Allow: /results
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://tirsdagsquizen.no/sitemap.xml

@@ -1,0 +1,24 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue background matching brand -->
+  <rect width="1200" height="630" fill="#4A90E2"/>
+  
+  <!-- Q icon on left -->
+  <g transform="translate(200, 315)">
+    <!-- Top rounded part -->
+    <path d="M0 -120 C44.18 -120 80 -84.18 80 -40 L80 40 C80 84.18 44.18 120 0 120 C-44.18 120 -80 84.18 -80 40 L-80 -40 C-80 -84.18 -44.18 -120 0 -120 Z" fill="white"/>
+    
+    <!-- Inner cutout -->
+    <path d="M0 -80 C23.53 -80 42.67 -60.86 42.67 -40 L42.67 40 C42.67 60.86 23.53 80 0 80 C-23.53 80 -42.67 60.86 -42.67 40 L-42.67 -40 C-42.67 -60.86 -23.53 -80 0 -80 Z" fill="#4A90E2"/>
+    
+    <!-- Vertical line -->
+    <rect x="-10" y="60" width="20" height="80" fill="white"/>
+    
+    <!-- Arrow point -->
+    <path d="M0 160 L-16 144 L-5 144 L-5 148 L5 148 L5 144 L16 144 Z" fill="white"/>
+  </g>
+  
+  <!-- Title text -->
+  <text x="350" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">TIRSDAGSQUIZEN</text>
+  <text x="350" y="340" font-family="Arial, sans-serif" font-size="32" fill="white" opacity="0.9">Simultaneous Multi-Location Quiz Platform</text>
+  <text x="350" y="400" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.8">Powered by Quizlo</text>
+</svg>
